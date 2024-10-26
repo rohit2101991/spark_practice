@@ -1,0 +1,12 @@
+Execute below in order pasted
+
+1)kubectl apply -f postgres-deployment.yaml
+2)kubectl apply -f airflow-scheduler.yaml
+3)kubectl apply -f airflow-webserver.yaml
+
+Once all 3 pods are up then port foward airflow wenserver to localhost using below command
+
+kubectl port-forward svc/airflow-webserver    8080:8080 -n airflow 
+
+Airflow UI will now be seen at http://localhost:8080
+
