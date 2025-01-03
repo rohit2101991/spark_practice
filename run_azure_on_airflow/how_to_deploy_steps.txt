@@ -10,3 +10,4 @@ kubectl port-forward svc/airflow-webserver    8080:8080 -n airflow
 
 Airflow UI will now be seen at http://localhost:8080
 
+Databricks - Select Standard_D4ds_v5 as 16GB min worker and max worker 2
